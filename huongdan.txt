@@ -1,0 +1,3 @@
+hẹn giờ : 
+1. https://hanoiict.edu.vn/bo-hen-gio-settimeout-va-setinterval-trong-javascript
+2. https://www.niemvuilaptrinh.com/article/Tao-Dong-Ho-Dem-Nguoc-Countdown-Timer-Cho-Trang-Web

@@ -1,0 +1,220 @@
+<!-- thẻ li tạo danh mục
+	 thẻ ul tạo danh sách thứ tự sử dụng thẻ
+	 thẻ a để vào link khác
+	 thẻ nav định nghĩa link danh mục
+	 thẻ span được sử dụng để nhóm các inline trong văn bản HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Phòng Ngủ</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App Landing Page</title>
+  <link rel="stylesheet" href="switch.css" type="text/css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hengiophongngu.css">
+  <link rel="stylesheet" href="bootstrap-toggle.min_phongngu.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                                  
+  <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script> 
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase.js"></script>
+
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCWBTQy-KBvv3dcI7521tOzPGSNN6GGnlY",
+    authDomain: "ttiots-ff1e4.firebaseapp.com",
+    databaseURL: "https://ttiots-ff1e4-default-rtdb.firebaseio.com",
+    projectId: "ttiots-ff1e4",
+    storageBucket: "ttiots-ff1e4.appspot.com",
+    messagingSenderId: "44715842105",
+    appId: "1:44715842105:web:a5f2ad15bb62837511cbe8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="./img/logo5.png" alt="" class="header_logo-img">
+        </div>    
+        <div class="col-md-9 header_banner">          
+          <img src="./img/banner1.png" class="mx-auto d-block header_banner-img">
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="pos-f-t">
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-black p-4">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="./Trangchu.html"><span style="color:bisque">Trang Chủ</span></a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./phongkhach.html"></span><span style="color:bisque">Phòng Khách</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./phongngu.html"></span><span style="color:bisque">Phòng Ngủ</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./phongbep.html"></span><span style="color:bisque">Phòng Bếp</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <nav class="navbar bg-black navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" >
+                  <span class="navbar-toggler-icon"></span><span style="color:bisque">SmartHome</span>
+                </button>
+              </nav>
+          </div>
+          <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="./img/nhathongminh.gif" alt="description of gif" style="width:100%"/> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="./img/nhathongminh3.gif" alt="description of gif" style="width:100%"/> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="./img/nhathongminh2.gif" alt="description of gif" style="width:100%"/> 
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-9">
+          <div class="container text-center">
+            <p>PHÒNG NGỦ</p>>
+              <div class="row">
+                <h1 
+                  style="color:aliceblue;margin-left:400px; margin-top: -115px;font-size: 16px;" 
+                  id="datetime">			
+                </h1>
+              </div>
+            <div class="row"> 
+
+               <div class="col-md-4">
+                <div class="card">
+                <img id="quatId_01" class="card-img-top" src="./img/quat_off.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <button class="button button2" id="batquat">ON</button>
+                  <button class="button button2" id="tatquat">OFF</button> 
+                </div>
+              </div>          
+              </div>   
+
+                <div class="col-md-4">
+                  <div class="card">
+                    <img id="canhbaoId_01" class="card-img-top" src="./img/light_bulb_off.png" alt="Card image" style="width:90%;margin-top:-17px;margin-left:10px;">
+                    <div class="card-body"> 
+                  <div id="state"></div>
+                  <div id="info"></div>
+                  <input id="toggle-trigger" type="checkbox" data-toggle="toggle" data-onstyle="outline-success" data-offstyle="outline-danger">
+                   </div> 
+                  </div>
+                </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <p class="canhbao">CẢNH BÁO</p>
+                  <img id="denId_01" class="card-img-top" src="./img/light_bulb_off.png" alt="Card image" style="width:100%;margin-top:-17px;">
+                  <div class="card-body">
+                    <button class="button button1" id="btnOnId_01">ON</button>
+                    <button class="button button1" id="btnOffId_01">OFF</button>
+                  </div>
+                  </div> 
+                </div>
+
+              </div>
+
+              <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card" style="margin-top:20px;"> 
+                       <div>GIÁ TRỊ NGƯỠNG</div>
+                        <div class="card-body">
+                          <div>NHIỆT ĐỘ</div> 
+                          <span id="sliderNgangValue">0 </span>  
+                          <input type="range" min="0" max="100" value="0" class="slider" id="sliderNgangId">  
+                          <div>ĐỘ ẨM</div> 
+                          <span id="sliderNgangValue1">0 </span>  
+                          <input type="range" min="0" max="100" value="0" class="slider" id="sliderNgangId1"> 
+                        </div>                     
+                    </div>
+                </div>          
+
+              <div class="col-md-4">
+                <div class="card">
+                  <div id="sliderTronId_01" class="round-slider" style="margin: 25px;"></div>
+                  <div class="card-body">
+                    <p class="cambien">NHIỆT ĐỘ</p>
+                  </div>
+                </div>          
+              </div> 
+
+              <div class="col-md-4">
+                <div class="card">
+                  <div id="sliderTronId_02" class="round-slider" style="margin: 25px;"></div>
+                  <div class="card-body">
+                    <p class="cambien">ĐỘ ẨM</p>
+                  </div>
+                </div>          
+              </div>
+             </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="clock-wrap">
+                  <div class="clock pro-0">
+                    <span class="count" style="margin-left:-90px;">0</span>
+                  </div>
+                </div>
+                <div class="action">
+                  <div class="input">
+                    <input class="input-num" type="number" min="1" placeholder="Enter Minute"><input data-action="start" class="input-btn" type="button" value="Start">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card">
+                  <img id="remId_01" class="card-img-top" src="./img/rem_off.jpg" alt="Card image" style="width:100%;height:60%;margin-top:20px;">
+                </div>          
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+   
+   <script src="phongngu.js"></script>
+</body>
+</html>
